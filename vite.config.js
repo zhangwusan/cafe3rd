@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/cafe3rd/",
   build: {
     rollupOptions: {
-      external: ['axios'],
+      external: [],
     },
   }
 })
