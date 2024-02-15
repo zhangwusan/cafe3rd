@@ -20,9 +20,10 @@ import Profile from "./pages/Profile";
 
 export default function App() {
   axios.defaults.baseURL = `https://meek-tail-production.up.railway.app`
+  
   const login = window.localStorage.getItem('isLogin');
   return (
-    <Router>
+    <Router basename="/cafe3rd">
       <Routes>
         <Route path="/" element={login ? <Home /> : <Login/>} />
         <Route path="/admin" element={<Admin />} />
