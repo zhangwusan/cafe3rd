@@ -23,7 +23,7 @@ export default function App() {
   
   const login = window.localStorage.getItem('isLogin');
   return (
-    <Router basename="/cafe3rd">
+    <Router basename="cafe3rd">
       <Routes>
         <Route path="/" element={login ? <Home /> : <Login/>} />
         <Route path="/admin" element={<Admin />} />
