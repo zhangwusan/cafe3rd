@@ -19,7 +19,7 @@ import Register from "./pages/auth/Register";
 import Profile from "./pages/Profile";
 
 export default function App() {
-  axios.defaults.baseURL = `https://meek-tail-production.up.railway.app`
+  axios.defaults.baseURL = `https://meek-tail-production.up.railway.app/`
   
   const login = window.localStorage.getItem('isLogin');
   return (
